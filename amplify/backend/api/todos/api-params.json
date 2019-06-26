@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "todoLambda",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "todos",
+    "apiName": "todos",
+    "functionArns": [
+        {
+            "lambdaFunction": "todoLambda"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-console-app-dev-20190626052710-authRole",
+        "unAuthRoleName": "amplify-console-app-dev-20190626052710-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "todoLambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
