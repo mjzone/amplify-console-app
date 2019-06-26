@@ -12,8 +12,6 @@ import { API } from "aws-amplify";
 
 Amplify.configure(awsconfig);
 
-const SLS_ENDPOINT = process.env.SLS_ENDPOINT;
-
 class App extends React.Component {
   callAmplifyApi = () => {
     API.get("todos", "/items", {});
@@ -21,7 +19,7 @@ class App extends React.Component {
 
   callSlsApi = () => {
     axios
-      .get(SLS_ENDPOINT)
+      .get("https://z8ceotqn9e.execute-api.us-east-1.amazonaws.com/dev/todos")
       .then(res => console.log(res))
       .catch(err => console.log(err));
   };
