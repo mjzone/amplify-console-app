@@ -14,7 +14,7 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>Hello World!</p>
+          <p>Hello World - Chaged!</p>
         </header>
       </div>
     );
