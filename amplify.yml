@@ -1,0 +1,27 @@
+version: 0.1
+backend:
+  phases:
+    preBuild:
+      commands:
+        - yarn global add serverless
+    build:
+      commands:
+        - amplifyPush --simple
+        - cd mybackend
+        - serverless deploy
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd ../
+        - yarn install
+    build:
+      commands:
+        - yarn run build
+  artifacts:
+    baseDirectory: build
+    files:
+      - "**/*"
+  cache:
+    paths:
+      - node_modules/**/*
