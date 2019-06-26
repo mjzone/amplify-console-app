@@ -29,10 +29,7 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>Hello World!</p>
-          <button onClick={this.callAmplifyApi}>Call Amplify Rest API</button>
-          <hr />
-          <button onClick={this.callSlsApi}>Call Serverless Endpoint</button>
+          <p>Hello World! - REMOVED BUTTONS</p>
         </header>
       </div>
     );
