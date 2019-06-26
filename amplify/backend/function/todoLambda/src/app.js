@@ -45,6 +45,10 @@ const todos = [
   {
     id: 3,
     name: "Code"
+  },
+  {
+    id: 4,
+    name: "New todo"
   }
 ];
 
