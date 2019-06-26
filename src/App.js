@@ -19,7 +19,7 @@ class App extends React.Component {
 
   callSlsApi = () => {
     axios
-      .get("https://a6a7apt6if.execute-api.us-east-1.amazonaws.com/dev/todos")
+      .get("https://z8ceotqn9e.execute-api.us-east-1.amazonaws.com/dev/todos")
       .then(res => console.log(res))
       .catch(err => console.log(err));
   };
